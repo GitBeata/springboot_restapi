@@ -24,7 +24,7 @@ public class ImageContentController {
         return imageContentRepository.findAll();
     }
 
-    // Pobieranie pojedynczej treści po ID
+    // Pobieranie pojedynczej treści po ID 4
     @GetMapping("/{id}")
     public ResponseEntity<ImageContent> getContentById(@PathVariable String id) {
         Optional<ImageContent> imageContent = imageContentRepository.findById(id);
